@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,22 +13,25 @@
         .tagline {
             font-size: 20px;
             color: green;
-            white-space: nowrap;
+            width: 100%;
+            height: 30px;
             overflow: hidden;
             position: relative;
+            border: 1px solid black;
         }
 
         .tagline span {
             position: absolute;
+            white-space: nowrap;
             animation: moveText 8s linear infinite;
         }
 
         @keyframes moveText {
-            from {
-                left: -100%;
-            }
-            to {
+            0% {
                 left: 100%;
+            }
+            100% {
+                left: -100%;
             }
         }
     </style>
